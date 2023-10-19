@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const packageJson = require('../package.json');
-const commanConfig = require('./webpack.common');
+const commonConfig = require('./webpack.common');
 
 const prodConfig = {
     mode: 'production',
@@ -21,4 +21,4 @@ const prodConfig = {
     ]
 };
 
-module.exports = merge(commanConfig, prodConfig);
+module.exports = merge(commonConfig, prodConfig);
